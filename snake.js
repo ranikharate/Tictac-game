@@ -1,4 +1,4 @@
-// game constants & variables//
+ // game constants & variables//
 
 let inputDir = {x: 0, y: 0};
 const foodSound = new Audio('images/playmusic.wav');
@@ -29,6 +29,7 @@ function main(ctime) { //current time//
 
 function isCollide(snake) {
     // if you bump into yourself//
+    
     for (let i = 1; i < snakeArr.length; i++){
               if(snake[i].x === snake[0].x && snake[i].y === snake[0].y){
                  return true;
